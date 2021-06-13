@@ -1,0 +1,131 @@
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform:uppercase;
+  font-size: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+button {
+  font-family: 'Lexend Deca', sans-serif;
+  border-style:none;
+  border-radius: 20px;
+  padding:12px 30px 12px 30px;
+  font-size: 15px;
+  border: 2px solid hsl(0, 0%, 95%);
+  position: absolute;
+  bottom: 50px;
+}
+
+button:hover {
+  color: hsl(0, 0%, 95%);
+}
+
+.sedans-button {
+  background-color: hsl(0, 0%, 95%);
+  color:hsl(31, 77%, 52%);
+}
+
+.sedans-button:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suv-button {
+  background-color: hsl(0, 0%, 95%);
+  color:hsl(184, 100%, 22%);
+}
+
+.suv-button:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-button {
+  background-color: hsl(0, 0%, 95%);
+  color:hsl(179, 100%, 13%);
+}
+
+.luxury-button:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.main-component {
+  width: 95%;
+  max-width: 300px;
+  border-radius: 4px;
+  margin:auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.Sedans-card, .SUVs-card, .Luxury-card {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 40px 30px 20px 40px;
+  height:425px;
+  width: 100%;
+  line-height: 1.7;
+  position: relative;
+  vertical-align: top;
+}
+
+.Sedans-card {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 6px 6px 0 0;
+}
+
+.SUVs-card {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.Luxury-card {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 6px 6px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .Sedans-card, .SUVs-card, .Luxury-card {
+      display: inline-block;
+      padding: 40px 50px 20px 40px;
+      height:100%;
+      width: 33%;
+    }
+
+    .main-component {
+      max-width: none;
+      min-width: 700px;
+      width: 60%;
+      height: 500px;
+      border-radius: 4px;
+      margin:auto;
+      margin-top: 100px;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    button {
+      padding:12px 30px 12px 30px;
+      font-size: 15px;
+      bottom: 50px;
+    }
+
+    .Sedans-card {
+      border-radius: 6px 0 0 6px;
+    }
+
+    .Luxury-card {
+      border-radius: 0 6px 6px 0;
+    }
+}
